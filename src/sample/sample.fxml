@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<center>
+    <TabPane fx:id= "tab1">
+        <tabs>
+            <Tab  closable="true" text="Search">
+                <content>
+                    <GridPane alignment="center" styleClass="bg" hgap="10" vgap="10" >
+
+                        <Text text="Welcome, please enter the directory you would like to search in." GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+                        <TextField fx:id="UserInput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <HBox alignment="bottom_left" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <Button onAction="#handleSubmitButtonAction" text="Submit" />
+                        </HBox>
+
+                        <Text fx:id="actiontarget"  GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                        <columnConstraints>
+                            <ColumnConstraints />
+                            <ColumnConstraints />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                            <RowConstraints />
+                        </rowConstraints>
+                        <stylesheets>
+                            <URL value="@colours.css" />
+                        </stylesheets>
+                    </GridPane>
+                </content>
+            </Tab>
+        </tabs>
+        <Tab  closable="false" text="Output Chart">
+            <content>
+                <TableView fx:id="tableView">
+                    <columns>
+                        <TableColumn prefWidth="550.0" fx:id="file" text="File" />
+                        <TableColumn prefWidth="150.0" fx:id="actualClass" text="Actual Class" />
+                        <TableColumn prefWidth="150.0" fx:id="detectedClass" text="Detected Class" />
+                        <TableColumn prefWidth="150.0" fx:id="wordCount" text="WordCount" />
+
+                    </columns>
+                </TableView>
+
+            </content>
+
+        </Tab><stylesheets>
+        <URL value="@colours.css" />
+        </stylesheets>
+    </TabPane>
+</center>
+</BorderPane>

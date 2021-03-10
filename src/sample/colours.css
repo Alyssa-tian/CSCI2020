@@ -1,0 +1,32 @@
+.label{
+     -fx-text-fill: grey;
+     -fx-font-size: 16px;
+}
+
+.text{
+     -fx-font-size: 14px;
+}
+
+
+.bg{
+    -fx-background-color: #D8D8EA;
+}
+
+.tab{
+    -fx-background-color: #9999cf;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #716096;
+}
+
+.tree-cell {
+    -fx-background-color:#242424;
+}
+
+
+.button{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#857DB1, #5D5393);
+}
